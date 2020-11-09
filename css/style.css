@@ -1,16 +1,6 @@
-
 body {
   background-color: #f9f9ff;
   font-family: Montserrat;
-  width: 100%;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
-  html
-  body{
-    width: 100%;
-    overflow-x: hidden;
-  }
 }
 
 /* ------------------- navbar ------------------- */
@@ -22,7 +12,6 @@ header {
   right: 0;
   left: 0;
   z-index: 10;
-  width: 100%;
   border-bottom: 1px solid rgba(198, 198, 198, 0.5);
 }
 
@@ -34,50 +23,45 @@ header {
   width: 96px;
 }
 
+.navbar .navbar-nav .nav-item .nav-link {
+  margin: 0 10px;
+}
+
 .navbar .container .navbar-nav .nav-item a {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #826ac6;
+  font-weight: bolder;
+}
+
+.navbar .container .navbar-nav a:hover,
+.navbar .container .navbar-nav .active a {
+  font-weight: bolder;
+  font-size: 14px;
   display: flex;
   align-items: center;
   color: #3b15aa;
 }
 
-.navbar .navbar-nav .nav-item .nav-link {
-  padding: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
 .navbar .container .navbar-nav .nav-item .nav-buttom {
+  display: flex;
+  border: 1px solid transparent;
   background-color: #3b15aa;
   color: white;
+  margin: 0 10px;
+  padding: 8px;
 }
 .navbar .container .navbar-nav .nav-item .nav-buttom:hover {
+  text-decoration: none;
   background-color: transparent;
   border: 1px solid #3b15aa;
   color: #3b15aa;
 }
 
-.navbar .container .navbar-nav a:hover,
-.navbar .container .navbar-nav .active a {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bolder;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-
-  color: #3b15aa;
-}
-
-/* ------------------- banner ------------------- */
-main .content-3 {
-  display: block;
-  position: relative;
-}
+/* ------------------- navbar ------------------- */
 .banner {
   background-color: #f9f9ff;
   background-image: url("../img/motif.png");
@@ -89,24 +73,14 @@ main .content-3 {
   min-height: 100vh;
   display: flex !important;
   padding: 0;
+  justify-content: center; /* untuk horizontal */
   align-items: center !important; /* untuk vertical */
   z-index: -10;
 }
+
 @media screen and (max-width: 767px) {
   .banner {
     background-image: none;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .banner .container{
-    justify-content: center!important; /* untuk horizontal */
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex!important;
   }
 }
 
@@ -121,6 +95,12 @@ main .content-3 {
     height: 260px;
     display: block;
     margin-left: auto;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .banner .banner-content .banner-image .icon-ali {
+    height: 250px;
   }
 }
 
@@ -187,7 +167,7 @@ main .content-3 {
   z-index: 1;
 }
 
-@media only screen and (max-height: 360px) {
+@media only screen and (max-height: 630px) {
   .banner-footer .banner-footer-content {
     display: none;
   }
@@ -200,21 +180,42 @@ main .content-3 {
   padding-top: 110px;
 }
 
-.content_about .container {
-  margin-top: 40px;
-  padding: 10px;
-  display: flex;
-  z-index: 1;
+.content_about .about-me {
+  margin-left: 25px;
 }
+
+.content_about .container {
+  margin: 40px 0px 10;
+  padding: 10px;
+}
+
 .content_about .card .circle-ali {
-  height: 240px;
+  height: 320px;
   align-items: center;
   display: block;
   margin: auto;
 }
-.content_about .container .row .judul {
-  text-align: center;
+
+@media only screen and (max-width: 991px) {
+  .content_about .card .circle-ali {
+    height: 280px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
 }
+
+@media only screen and (max-width: 650px) {
+  .content_about .card .circle-ali {
+    height: 200px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+.content_about .container .card-utama {
+  padding: 30px;
+}
+
 
 .content_about .container .row h1 {
   font-family: Montserrat;
@@ -236,7 +237,7 @@ main .content-3 {
 .content_about .card-body .card-text {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22px;
 }
 
