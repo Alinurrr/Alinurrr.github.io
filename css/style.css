@@ -501,6 +501,13 @@ text-align: center;
 .start-project {
     transform: translateY(40%);
 }
+
+@media screen and (max-width: 992px){
+  .start-project {
+    transform: translateY(30%);
+  }
+}
+
 .start-project .card{
   background-color: #623BD6;
   color: white;
@@ -532,6 +539,12 @@ text-align: center;
   border-color: #ffffff;
   color: #ffffff;
 }
+@media screen and (max-width: 992px){
+  .start-project .card .card-body .card-responsive {
+  padding: 12px;
+  }  
+}
+
 
 .start-project .card .card-body a:hover {
   background-color: #ffffff;
