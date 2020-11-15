@@ -586,3 +586,27 @@ footer .icon-footer a {
 footer .icon-footer a:hover {
   color: #F9D74C;
 }
+
+/* ------------------- contact ------------------- */
+
+.contact-me{
+  padding-top: 75px;
+}
+
+.contact-me form{
+ text-align: left;
+ max-width: 600px;
+}
+
+.contact-me form input{
+  height: 50px;
+  line-height: 14px;
+}
+
+@media screen and (min-width: 769px){
+  .contact-me form{
+    margin: 50px auto 0;
+  }
+}
+
+
