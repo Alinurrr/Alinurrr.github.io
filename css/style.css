@@ -54,6 +54,7 @@ header {
   margin: 0 10px;
   padding: 8px;
 }
+
 .navbar .container .navbar-nav .nav-item .nav-buttom:hover {
   text-decoration: none;
   background-color: transparent;
@@ -66,15 +67,17 @@ header {
   background-color: #f9f9ff;
   background-image: url("../img/motif.png");
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 70% cover;
   background-position: center;
   position: relative;
   height: 100vh;
   min-height: 100vh;
   display: flex !important;
   padding: 0;
-  justify-content: center; /* untuk horizontal */
-  align-items: center !important; /* untuk vertical */
+  justify-content: center;
+  /* untuk horizontal */
+  align-items: center !important;
+  /* untuk vertical */
 }
 
 @media screen and (max-width: 767px) {
@@ -134,14 +137,14 @@ header {
   }
 }
 
-.banner_content_stabilo{
+.banner_content_stabilo {
   position: relative;
   display: inline-block;
   padding-top: -2px;
   z-index: 1;
 }
 
-.banner_content_stabilo::after{  
+.banner_content_stabilo::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -166,6 +169,7 @@ header {
     font-size: 42px;
   }
 }
+
 .banner .banner-content .banner-text p {
   font-family: Montserrat;
   font-style: normal;
@@ -222,11 +226,12 @@ header {
 .content_about .about-me h1 {
   font-weight: 700;
 }
-@media screen and (max-width: 994px) { 
+
+@media screen and (max-width: 994px) {
   .content_about .about-me {
-  text-align: center;
-  display: block;
-}
+    text-align: center;
+    display: block;
+  }
 }
 
 @media screen and (max-width: 994px) {
@@ -251,7 +256,7 @@ header {
     align-items: center;
     margin-right: auto;
   }
-  
+
 }
 
 
@@ -274,12 +279,14 @@ header {
 .content_about .card-body {
   font-family: Montserrat;
 }
+
 .content_about .card-body .card-title {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 }
+
 .content_about .card-body .card-text {
   font-style: normal;
   font-weight: 500;
@@ -287,69 +294,73 @@ header {
   line-height: 22px;
 }
 
-.content_about .my-skills{
+.content_about .my-skills {
   padding: 0 125px;
 }
 
 @media screen and (max-width: 994px) {
-  .content_about .my-skills{
+  .content_about .my-skills {
     padding: 0 30px;
   }
 }
 
-.content_about .my-skills .card-skills{
+.content_about .my-skills .card-skills {
   border-radius: 10px;
   border: 5px solid;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-align: center; 
+  text-align: center;
   margin: 10px;
 }
 
-.content_about .my-skills .skill-web{
+.content_about .my-skills .skill-web {
   border-color: #6C6CE5;
 }
-.content_about .my-skills .skill-plane{
+
+.content_about .my-skills .skill-plane {
   border-color: #F97B8B;
 }
-.content_about .my-skills .skill-draw{
+
+.content_about .my-skills .skill-draw {
   border-color: #F9D74C;
 }
 
-.content_about .my-skills .card-skills .image-skill{
-  margin-top: 40px;;
+.content_about .my-skills .card-skills .image-skill {
+  margin-top: 40px;
+  ;
 }
 
-.content_about .my-skills .card-skills .card-subtitle{
+.content_about .my-skills .card-skills .card-subtitle {
   font-size: 18px;
   font-weight: bold;
 }
 
 
 /* ------------------- my work ------------------- */
-.my-work{
+.my-work {
   position: relative;
 }
-@media screen and (min-width: 1216px){
+
+@media screen and (min-width: 1216px) {
   .section.is-long {
-      padding-bottom: 18rem;
-      padding-top: 9rem;
+    padding-bottom: 18rem;
+    padding-top: 9rem;
   }
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 769px) {
   .section.is-long {
-      padding-bottom: 16rem;
-      padding-top: 8rem;
+    padding-bottom: 16rem;
+    padding-top: 8rem;
   }
 }
 
 .section.is-long {
-    padding-bottom: 14rem;
-    padding-top: 7rem;
+  padding-bottom: 14rem;
+  padding-top: 7rem;
 }
 
 .my-work {
-    margin-top: 200px;
+  margin-top: 200px;
 }
 
 .section.is-primary {
@@ -357,21 +368,23 @@ header {
   color: #fff;
 }
 
-@media screen and (min-width: 1024px){
-.section.is-medium {
+@media screen and (min-width: 1024px) {
+  .section.is-medium {
     padding: 9rem 1.5rem;
-}
+  }
 }
 
 .has-text-centered {
   text-align: center !important;
 }
 
-@media screen and (min-width: 769px), print{
-.columns:not(.is-desktop) {
+@media screen and (min-width: 769px),
+print {
+  .columns:not(.is-desktop) {
     display: -webkit-box;
     display: flex;
-}}
+  }
+}
 
 .columns.is-centered {
   -webkit-box-pack: center;
@@ -388,12 +401,16 @@ header {
   margin-top: -0.75rem;
 }
 
-@media screen and (min-width: 769px), print{
-  .column.is-three-fifths, .column.is-three-fifths-tablet {
+@media screen and (min-width: 769px),
+print {
+
+  .column.is-three-fifths,
+  .column.is-three-fifths-tablet {
     -webkit-box-flex: 0;
     flex: none;
     width: 60%;
-}}
+  }
+}
 
 .column {
   display: block;
@@ -404,31 +421,32 @@ header {
   padding: 0.75rem;
 }
 
-.my-work .my-work-tittle{
+.my-work .my-work-tittle {
   font-weight: 600;
   font-size: 36px;
 }
 
-.my-work .my-work-subtittle{
+.my-work .my-work-subtittle {
   font-size: 24px;
   font-weight: 400;
 }
-.my-work-list{
+
+.my-work-list {
   transform: translateY(-10%);
 }
 
 
-@media screen and (max-width: 769px){
-  .my-work-list{
+@media screen and (max-width: 769px) {
+  .my-work-list {
     transform: translateY(-5%);
-  }  
+  }
 }
 
 .my-work-list .my-work-card {
   text-align: center;
 }
 
-.my-work-list .my-work-card .card{
+.my-work-card .card {
   background: #FFFFFF;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
@@ -437,34 +455,37 @@ header {
   margin-bottom: 15px;
 }
 
-.my-work-list .my-work-card .card img{
+.my-work-card .card img {
   border-radius: 5px;
 }
 
 
-.my-work-list .my-work-card .card-body .card-title{
+.my-work-card .card-body .card-title {
   font-size: 15px;
   font-weight: 700;
   margin-top: 10px;
 }
-.my-work-list .my-work-card .card-body .card-text{
+
+.my-work-card .card-body .card-text {
   margin-bottom: 5px;
   font-weight: 500;
   font-size: 13px;
 }
-.my-work-list .my-work-card .card-body .card-subtitle{
+
+.my-work-card .card-body .card-subtitle {
   font-size: 14px;
   font-weight: normal;
   margin-top: 16px;
 }
 
-.mywork_content_stabilo{
+.mywork_content_stabilo {
   position: relative;
   display: inline-block;
   padding-top: -1px;
   z-index: 1;
 }
-.mywork_content_stabilo::after{  
+
+.mywork_content_stabilo::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -478,11 +499,11 @@ header {
   transform: translateX(-25%);
 }
 
-.seemore-work{
-text-align: center;
+.seemore-work {
+  text-align: center;
 }
 
-.seemore-work .btn-seemore-work{
+.seemore-work .btn-seemore-work {
   background-color: transparent;
   border-radius: 50px;
   padding: 10px 100px;
@@ -490,7 +511,8 @@ text-align: center;
   color: #007bff;
   border-color: #007bff;
 }
-.seemore-work .btn-seemore-work:hover{
+
+.seemore-work .btn-seemore-work:hover {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
@@ -499,24 +521,26 @@ text-align: center;
 
 /* ------------------- start-project ------------------- */
 .start-project {
-    transform: translateY(40%);
+  transform: translateY(40%);
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
   .start-project {
     transform: translateY(30%);
   }
 }
 
-.start-project .card{
+.start-project .card {
   background-color: #623BD6;
   color: white;
   border-radius: 10px;
 }
-.start-project .card .card-body .row{
+
+.start-project .card .card-body .row {
   display: flex;
-  align-items: center!important;
+  align-items: center !important;
 }
+
 .start-project .card .card-body {
   padding: 45px;
   margin: auto;
@@ -526,11 +550,13 @@ text-align: center;
   font-size: 2rem;
   font-weight: 800;
 }
+
 .start-project .card .card-body p {
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 0;
 }
+
 .start-project .card .card-body a {
   border-radius: 10px;
   padding: 10px 30px;
@@ -539,10 +565,11 @@ text-align: center;
   border-color: #ffffff;
   color: #ffffff;
 }
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
   .start-project .card .card-body .card-responsive {
-  padding: 12px;
-  }  
+    padding: 12px;
+  }
 }
 
 
@@ -568,11 +595,13 @@ footer .text-footer {
   display: inline;
   padding-top: 80px;
 }
+
 footer .text-footer h1 {
   font-weight: bold;
   margin-bottom: 15px;
   font-size: 36px;
 }
+
 footer .text-footer p {
   font-weight: normal;
   font-size: 16px;
@@ -583,28 +612,29 @@ footer .icon-footer a {
   color: #ffffff;
   text-decoration: none;
 }
+
 footer .icon-footer a:hover {
   color: #F9D74C;
 }
 
 /* ------------------- page contact ------------------- */
 
-.contact-me{
+.contact-me {
   padding-top: 75px;
 }
 
-.contact-me form{
- text-align: left;
- max-width: 600px;
+.contact-me form {
+  text-align: left;
+  max-width: 600px;
 }
 
-.contact-me form input{
+.contact-me form input {
   height: 50px;
   line-height: 14px;
 }
 
-@media screen and (min-width: 769px){
-  .contact-me form{
+@media screen and (min-width: 769px) {
+  .contact-me form {
     margin: 50px auto 0;
   }
 }
@@ -613,27 +643,76 @@ footer .icon-footer a:hover {
 
 /* ------------------- page portfolio ------------------- */
 
-.all-work-list{
-  padding: 150px 190px 100px;
+/* banner */
+.all-work-list .banner-worklist {
+  padding: 150px 0 150px 100px;
   background-image: url("../img/banner-worklist.png");
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: cover;
   background-position: center;
 }
 
-.all-work-list .banner-worklist-content .banner-text{
-  padding-left: 60px;
+@media screen and (max-width: 991px) {
+  .all-work-list .banner-worklist {
+    padding: 80px 0;
+    text-align: center;
+  }
 }
-.all-work-list .banner-worklist-content h1{
+
+@media screen and (max-width: 991px) {
+  .all-work-list .banner-worklist .banner-worklist-content .icon-coffee-tea {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .all-work-list .banner-worklist-content .icon-coffee-tea {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .all-work-list .banner-worklist-content .banner-text h1.my-work-title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .all-work-list .banner-worklist-content .banner-text p {
+    font-size: 18px;
+  }
+
+}
+
+.all-work-list .banner-worklist-content .banner-text {
+  padding-left: 33px;
+}
+
+.all-work-list .banner-worklist-content h1 {
   font-weight: bold;
   font-size: 48px;
-  line-height: 59px;
-  color: #FFFFFF;
-}
-.all-work-list .banner-worklist-content p{
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
   color: #FFFFFF;
 }
 
+.all-work-list .banner-worklist-content p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+/* header */
+.all-work-list .worklist-header .nav-mywork {
+  padding: 25px 0;
+}
+
+/* content */
+
+
+@media screen and (min-width: 1200px) {
+  .work-list-content {
+    padding: 0 20px;
+  }
+}
