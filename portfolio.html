@@ -79,18 +79,18 @@
 
 		<!-- my work title  -->
 		<div class="worklist-header text-center">
-			<div class="row">
+			<div class="row mx-0">
 				<div class="col-12">
 					<img src="img/mywork-title.png">
 				</div>
 			</div>
-			<div class="row">
+			<div class="row mx-0">
 				<!--First column-->
 
 				<!-- Nav tabs -->
 				<ul class="nav flex-center flex-wrap mx-auto nav-mywork">
-					<li class="nav-item">
-						<a class="nav-link active font-weight-bold text-uppercase" href="#panel31" role="tab">ALL</a>
+					<li class="nav-item active">
+						<a class="nav-link  font-weight-bold text-uppercase" href="#panel31" role="tab">ALL</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link font-weight-bold text-uppercase" href="#panel32" role="tab">Design</a>
@@ -104,91 +104,147 @@
 			</div>
 		</div>
 
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body p-3">
+						<button type="button" class="close m-3" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+
+						<!-- Grid row -->
+						<div class="row">
+
+
+							<!-- Grid column -->
+							<div class="col-md-12 py-5 pl-5">
+								<div class="view rounded-right">
+									<img class="img-fluid img-cover" src="img/my-work/web1.png" alt="Sample image">
+								</div>
+
+								<div class="text">
+									<h1 class="font-weight-normal mb-3">Lorem ipsum dolor sit amet</h1>
+
+									<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores soluta,
+										distinctio accusamus voluptates magni, culpa iste labore et ex assumenda, voluptate officia amet cum
+										corrupti cumque nesciunt consequuntur provident!</p>
+
+									<ul class="list-unstyled font-small mt-5">
+										<li>
+											<p class="text-uppercase mb-2"><strong>Client</strong></p>
+											<p class="text-muted mb-4">Envato Inc.</p>
+										</li>
+
+										<li>
+											<p class="text-uppercase mb-2"><strong>Skills</strong></p>
+											<p class="text-muted mb-4">Design, HTML, CSS, Javascript</p>
+										</li>
+
+										<li>
+											<p class="text-uppercase mb-2"><strong>Link</strong></p>
+											<a href="https://mdbootstrap.com/docs/jquery/design-blocks/">MDBootstrap</a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+							<!-- Grid column -->
+
+						</div>
+						<!-- Grid row -->
+
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- worklist content -->
 		<div class="work-list-content text-center">
 			<div class="row mx-3 my-work-card">
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/design1.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/web2.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/web1.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/design1.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/web2.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/design1.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/web2.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 
 				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-					<div class="card">
+					<a class="card" data-toggle="modal" data-target="#exampleModal">
 						<img src="img/my-work/web1.png" class="card-img-top" alt="...">
 						<div class="card-body">
 							<p class="card-text mywork_content_stabilo">WEB</p>
 							<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 							<p class="card-subtitle text-muted">card, subtitle</p>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>

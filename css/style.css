@@ -3,6 +3,12 @@ body {
   font-family: Montserrat;
 }
 
+
+a {
+  cursor: pointer;
+}
+
+
 /* ------------------- navbar ------------------- */
 
 header {
@@ -446,6 +452,15 @@ print {
   text-align: center;
 }
 
+.modal .view img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modal h1 {
+  font-weight: 700 !important;
+}
+
 .my-work-card .card {
   background: #FFFFFF;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
@@ -453,6 +468,10 @@ print {
   border: none;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.my-work-card .card:hover {
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
 }
 
 .my-work-card .card img {
@@ -650,6 +669,7 @@ footer .icon-footer a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  posi
 }
 
 @media screen and (max-width: 991px) {
@@ -715,4 +735,10 @@ footer .icon-footer a:hover {
   .work-list-content {
     padding: 0 20px;
   }
+}
+
+.all-work-list .worklist-header a:hover,
+.all-work-list .worklist-header .active a {
+  background-color: #6C6CE5;
+  color: white;
 }

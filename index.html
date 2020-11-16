@@ -194,70 +194,128 @@
 		</div>
 	</section>
 
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-body p-3">
+					<button type="button" class="close m-3" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+
+					<!-- Grid row -->
+					<div class="row">
+
+
+						<!-- Grid column -->
+						<div class="col-md-12 py-5 pl-5">
+							<div class="view rounded-right">
+								<img class="img-fluid img-cover" src="img/my-work/web1.png" alt="Sample image">
+							</div>
+
+							<div class="text">
+								<h1 class="font-weight-normal mb-3">Lorem ipsum dolor sit amet</h1>
+
+								<p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores soluta,
+									distinctio accusamus voluptates magni, culpa iste labore et ex assumenda, voluptate officia amet cum
+									corrupti cumque nesciunt consequuntur provident!</p>
+
+								<ul class="list-unstyled font-small mt-5">
+									<li>
+										<p class="text-uppercase mb-2"><strong>Client</strong></p>
+										<p class="text-muted mb-4">Envato Inc.</p>
+									</li>
+
+									<li>
+										<p class="text-uppercase mb-2"><strong>Skills</strong></p>
+										<p class="text-muted mb-4">Design, HTML, CSS, Javascript</p>
+									</li>
+
+									<li>
+										<p class="text-uppercase mb-2"><strong>Link</strong></p>
+										<a href="https://mdbootstrap.com/docs/jquery/design-blocks/">MDBootstrap</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+						<!-- Grid column -->
+
+					</div>
+					<!-- Grid row -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<section class="my-work-list">
 		<div class="container">
 			<div class="col-lg-12 my-work-card">
 				<div class="row">
 
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="card">
+						<a class="card" data-toggle="modal" data-target="#exampleModal">
 							<img src="img/my-work/web1.png" class="card-img-top" alt="...">
 							<div class="card-body">
 								<p class="card-text mywork_content_stabilo">WEB</p>
 								<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 								<p class="card-subtitle text-muted">card, subtitle</p>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="card">
+						<a class="card" data-toggle="modal" data-target="#exampleModal">
 							<img src="img/my-work/design1.png" class="card-img-top" alt="...">
 							<div class="card-body">
 								<p class="card-text mywork_content_stabilo">WEB</p>
 								<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 								<p class="card-subtitle text-muted">card, subtitle</p>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="card">
+						<a class="card" data-toggle="modal" data-target="#exampleModal">
 							<img src="img/my-work/web2.png" class="card-img-top" alt="...">
 							<div class="card-body">
 								<p class="card-text mywork_content_stabilo">WEB</p>
 								<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 								<p class="card-subtitle text-muted">card, subtitle</p>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="card">
+						<a class="card" data-toggle="modal" data-target="#exampleModal">
 							<img src="img/my-work/design1.png" class="card-img-top" alt="...">
 							<div class="card-body">
 								<p class="card-text mywork_content_stabilo">WEB</p>
 								<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 								<p class="card-subtitle text-muted">card, subtitle</p>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="card">
+						<a class="card" data-toggle="modal" data-target="#exampleModal">
 							<img src="img/my-work/web2.png" class="card-img-top" alt="...">
 							<div class="card-body">
 								<p class="card-text mywork_content_stabilo">WEB</p>
 								<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 								<p class="card-subtitle text-muted">card, subtitle</p>
 							</div>
-						</div>
+						</a>
 					</div>
 					<div class="col-lg-4 col-md-6 col-12">
-						<div class="card">
+						<a class="card" data-toggle="modal" data-target="#exampleModal">
 							<img src="img/my-work/web1.png" class="card-img-top" alt="...">
 							<div class="card-body">
 								<p class="card-text mywork_content_stabilo">WEB</p>
 								<h5 class="card-title">Lorem ipsum, dolor sit amet consectetur adipisicing. </h5>
 								<p class="card-subtitle text-muted">card, subtitle</p>
 							</div>
-						</div>
+						</a>
 					</div>
 
 				</div>
@@ -287,7 +345,7 @@
 								<a href="#" type="button" class="btn">Let’s do this</a>
 							</div>
 						</div>
-					</div> 
+					</div>
 				</div>
 			</div>
 		</div>
@@ -349,14 +407,14 @@
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
 </body>
 
 </html>
