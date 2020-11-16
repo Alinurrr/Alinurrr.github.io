@@ -17,7 +17,8 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
-
+	<!-- animate css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<!--  custom css file  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -64,10 +65,10 @@
 		<div class="banner-worklist">
 			<div class="container">
 				<div class="row mt-5 banner-worklist-content">
-					<div class="col-lg-4 col-md-12 banner-image p-1">
+					<div class="col-lg-4 col-md-12 banner-image p-1 animate__animated animate__bounceInLeft ">
 						<img src="img/coffee_tea.png" class="icon-coffee-tea">
 					</div>
-					<div class="col-lg-8 col-md-12 my-auto  banner-text">
+					<div class="col-lg-8 col-md-12 my-auto  banner-text animate__animated animate__bounceInRight ">
 						<h1>Hi.</h1>
 						<h1 class="my-work-title">This is my work.</h1>
 						<p>You can find some examples of projects I have worked on. with a glass of coffee or a glass of tea as a
@@ -78,7 +79,7 @@
 		</div>
 
 		<!-- my work title  -->
-		<div class="worklist-header text-center">
+		<div class="worklist-header text-center animate__animated animate__fadeIn animate__slow">
 			<div class="row mx-0">
 				<div class="col-12">
 					<img src="img/mywork-title.png">
@@ -325,39 +326,12 @@
 	</footer>
 	<!-- Footer -->
 
-	<!-- loader -->
-	<div class="loader-wrapper">
-		<div class="loader">
-			<div class="balls balls-1">
-				<div class="ball ball--1"></div>
-				<div class="ball ball--2"></div>
-				<div class="ball ball--3"></div>
-				<div class="ball ball--4"></div>
-			</div>
-			<div class="balls balls-2">
-				<div class="ball ball--1"></div>
-				<div class="ball ball--2"></div>
-				<div class="ball ball--3"></div>
-				<div class="ball ball--4"></div>
-			</div>
-		</div>
-	</div>
-	<!-- end loader -->
-
 
 
 
 
 
 	<!-- Optional JavaScript -->
-	<!-- loader script -->
-	<script>
-		let loader = document.querySelector('.loader-wrapper');
-
-		window.addEventListener('load', function () {
-			loader.parentElement.removeChild(loader);
-		});
-	</script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

@@ -17,7 +17,8 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
 		rel="stylesheet">
-
+	<!-- animate css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<!--  custom css file  -->
 	<link rel="stylesheet" href="css/style.css">
 
@@ -57,7 +58,7 @@
 
 			<div class=" rounded-top">
 
-				<img class="img img-fluid" src="img/icon.png">
+				<img class="img img-fluid animate__animated animate__swing " src="img/icon.png">
 
 				<!-- Section heading -->
 				<h2 class="font-weight-bold my-4">Hi.</h2>
@@ -71,14 +72,14 @@
 						<div class="col-md-6 mb-3">
 
 							<!-- Name -->
-							<label class="text-muted" for="basic-url">Your vanity URL</label>
+							<label class="text-muted" for="basic-url">Your Name</label>
 							<input type="text" id="name" class="form-control input-lg">
 
 						</div>
 						<div class="col-md-6 mb-3">
 
 							<!-- Email -->
-							<label class="text-muted" for="basic-url">Your vanity URL</label>
+							<label class="text-muted" for="basic-url">Your E-Mail</label>
 							<input type="email" id="email" class="form-control">
 
 						</div>
@@ -88,7 +89,7 @@
 						<div class="col-md-12">
 
 							<div class="form-group mb-4">
-								<label class="text-muted" for="basic-url">Your vanity URL</label>
+								<label class="text-muted" for="basic-url">Your Massage</label>
 								<textarea class="form-control rounded" id="message" rows="3"></textarea>
 							</div>
 
@@ -110,39 +111,7 @@
 
 	</div>
 
-	<!-- loader -->
-	<div class="loader-wrapper">
-		<div class="loader">
-			<div class="balls balls-1">
-				<div class="ball ball--1"></div>
-				<div class="ball ball--2"></div>
-				<div class="ball ball--3"></div>
-				<div class="ball ball--4"></div>
-			</div>
-			<div class="balls balls-2">
-				<div class="ball ball--1"></div>
-				<div class="ball ball--2"></div>
-				<div class="ball ball--3"></div>
-				<div class="ball ball--4"></div>
-			</div>
-		</div>
-	</div>
-	<!-- end loader -->
-
-
-
-
-
-
 	<!-- Optional JavaScript -->
-	<!-- loader script -->
-	<script>
-		let loader = document.querySelector('.loader-wrapper');
-
-		window.addEventListener('load', function () {
-			loader.parentElement.removeChild(loader);
-		});
-	</script>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
