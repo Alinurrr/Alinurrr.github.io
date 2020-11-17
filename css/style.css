@@ -333,7 +333,12 @@ header {
 
 .content_about .my-skills .card-skills .image-skill {
   margin-top: 40px;
-  ;
+}
+
+.content_about .my-skills .card-skills .card-footer {
+  background: none;
+  border: none;
+  height: 10rem;
 }
 
 .content_about .my-skills .card-skills .card-subtitle {
